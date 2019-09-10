@@ -30,6 +30,7 @@ body {
 
 .center{
   text-align: center;
+  margin-top: 100px;
 }
 
 ul {
@@ -42,4 +43,12 @@ p {
 
 h1 {
   color: red;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
