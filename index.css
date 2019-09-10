@@ -3,7 +3,6 @@ li {
   text-decoration: none;
   justify-content: space-between;
   padding: 25px;
-  
 }
 
 a {
@@ -13,10 +12,34 @@ a {
   font-size: 18px;
 }
 
+a:hover {
+  color: red;
+  border-bottom: 3px solid red;
+}
+
+
 .active {
   color: red;
+  border-bottom: 3px solid red;
 }
 
 body {
   background: black;
+  font-family: "nimbus-sans-condensed",impact,sans-serif;
+}
+
+.center{
+  text-align: center;
+}
+
+ul {
+  border-bottom: red;
+}
+
+p {
+  color: white;
+}
+
+h1 {
+  color: red;
 }
