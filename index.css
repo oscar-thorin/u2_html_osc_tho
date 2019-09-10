@@ -1,0 +1,22 @@
+li {
+  display: inline;
+  text-decoration: none;
+  justify-content: space-between;
+  padding: 25px;
+  
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  text-decoration-color: none;
+  font-size: 18px;
+}
+
+.active {
+  color: red;
+}
+
+body {
+  background: black;
+}
