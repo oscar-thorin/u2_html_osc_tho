@@ -9,7 +9,109 @@
 <title>Uppgift 2</title>
 <style>
 
+div, h2, h3, p, iframe, figure {
+  margin: 0;
+  padding: 0;
+}
 
+.main {
+  margin: 0 auto;
+  max-width: 1040px;
+  padding: 10px;
+}
+
+.column {
+  flex: 1;
+  flex-direction: column;
+}
+
+.article {
+  background-color: black;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin: 10px;
+  border: 5px solid red;
+}
+
+.article-image {
+  display: block;
+  padding-top: 75%;
+  position: relative;
+  width: 100%;
+}
+
+.article-image img {
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.article-image.is-3by2 {
+  padding-top: 66.6666%;
+}
+
+.article-image.is-16by9 {
+  padding-top: 56.25%;
+}
+
+.article-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.article-title {
+  color: red;
+  flex-shrink: 0;
+  font-size: 1.4em;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.article-content {
+  flex: 1;
+  margin-top: 5px;
+}
+
+.article-info {
+  display: flex;
+  font-size: 0.85em;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 800px) {
+  .columns,
+  .column {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .first-article {
+    flex-direction: row;
+  }
+
+  .first-article .article-body {
+    flex: 1;
+  }
+
+  .first-article .article-image {
+    height: 300px;
+    order: 2;
+    padding-top: 0;
+    width: 400px;
+  }
+
+  .main-column {
+    flex: 3;
+  }
+}
 </style>
   </head>
     <body>
@@ -25,19 +127,87 @@
   </div>
 </nav>
 
-<main>
-    <h1 class="center">Organisation</h1>
-    <p align="center"> G2 E-sports är en ledande organisation inom en stor variation av olika E-sporter som bl.a:
-      <br> Counter Strike, <br>League of Legends <br> och en mängd andra stora titlar.
-      </p>
+<h1 class="center">G2-Esports</h1>
+<p align="center"> är en ledande organisation inom en stor variation av olika E-sporter som bl.a:
+  <br> Counter Strike, <br>League of Legends <br> och en mängd andra stora titlar.
+  </p>
+
+<main class="main columns">
+      <section class="column main-column">
+        <a class="article first-article" href="#">
+          <figure class="article-image is-4by3">
+            <img src="/Users/thorin/Desktop/git-project/Pictures/g2winathenlec.jpg" alt="">
+          </figure>
+          <div class="article-body">
+            <h2 class="article-title">
+              #G2ARMY Are LEC Champions of Spring-split 2019
+            </h2>
+            <p class="article-content">
+              G2 Esports managed to win the LEC Finals against Fnatic in Athens with a gamescoe of 3-2.
+              This win will send G2 Esports to World Championship 2019 as #1st seed from Europe.
+            </p>
+          </div>
+        </a>
+
+        <div class="columns">
+          <div class="column">
+            <a class="article" href="#">
+              <figure class="article-image is-16by9">
+                <img src="/Users/thorin/Desktop/git-project/Pictures/g2squad.png" alt="">
+              </figure>
+              <div class="article-body">
+                <h2 class="article-title">
+                  G2 Esports League of Legends Team
+                </h2>
+                <p class="article-content">
+                  From left to right, </br>
+                  Top: Wunder </br>
+                  Jungler: Jankos </br>
+                  Mid: Caps </br>
+                  Adc: Perkz </br>
+                  Support: Mikyx </br>
+                  Coach: GrabbZ </br>
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="column">
+            <a class="article" href="#">
+              <figure class="article-image is-16by9">
+                <img src="/Users/thorin/Desktop/git-project/Pictures/perkznews.jpg" alt="">
+              </figure>
+              <div class="article-body">
+                <h2 class="article-title">
+                  Luka "Perkz" Perković
+                </h2>
+                <p class="article-content">
+                  Broke many records during this Final in Athens, </br>
+                  He has played a total of 8 splits and during those he has, </br>
+                  Made finals 7 of them, </br>
+                  And managed to win 6 of those finals!
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+</div>
+</div>
 
 </main>
-<!-- <footer>
-    <p>Footer</p>
-    <p>Adress: </p>
-    <p>Telefon: </p>
-    <p>Mail: </p>
-</footer> -->
+
+<footer>
+    <div class="footer">
+      <h2>Adress: Berlin, xx street </h2>
+      <h2>Telefon: 0700 000 000 </h2>
+      <h2>Mail: G2Esports@info.com </h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.5325826255234!2d13.371282915536458!3d52.505700145041715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851e78378f57d%3A0x8283faff8f5cb74f!2sG2%20Esports!5e0!3m2!1ssv!2sse!4v1568362810561!5m2!1ssv!2sse"
+          width="300" height="100%" frameborder="0"
+          style="border:0;" align="right">
+     </div>
+</footer>
 
 </body>
 </html>
